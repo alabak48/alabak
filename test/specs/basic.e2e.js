@@ -1,6 +1,8 @@
-describe('Open Wdio Website', () => {
-    it('Proper title is displayed', () => {
-        browser.url('https://webdriver.io/');
-        expect(browser).toHaveTitle('WebdriverIO · Next-gen browser and mobile automation test framework for Node.js | WebdriverIO');
-    })
-})
+describe("Shoutem web", async () => {
+
+        it("Check if Shoutem Pricing page is loading", async () => {
+            await browser.url("https://shoutem.com/pricing/");
+
+            await browser.pause(5000);
+        });
+});
